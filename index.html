@@ -21,7 +21,7 @@
                     
                     <!--Навигация на другие страницы-->
                     <ul class="header-nav list">
-                        <li><a class="header-nav-link pre-pre-nav link" href="./studio.html">Студия</a></li>
+                        <li><a class="header-nav-link pre-pre-nav link current" href="./studio.html">Студия</a></li>
                         <li><a class="header-nav-link pre-pre-nav link" href="portfolio.html">Портфолио</a></li>
                         <li><a class="header-nav-link pre-pre-nav link" href="">Контакты</a></li>
                     </ul>
@@ -47,9 +47,10 @@
             <section class="heading">
                 <div class="container">
                     <h1 class="heading-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                    <button class="heading-button pre-button" type="button">Заказать услугу</button>
+                    <button class="heading-button pre-button" type="button" data-modal-open>Заказать услугу</button>
                 </div>
-            </section>      
+            </section>   
+            
         </div>
         
         <!--Уникальный контент страницы-->
@@ -106,12 +107,15 @@
                     <ul class="main-box-ul list">
                         <li class="main-box-li">
                             <img src="./images/box/box1.jpg" alt="Печатают на клавиатуре" width="370" height="294">
+                            <h3 class="main-box-title position">Десктопные приложения</h3>
                         </li>
                         <li class="main-box-li">
                             <img src="./images/box/box2.jpg" alt="Ноутбук и телефон" width="370" height="294">
+                            <h3 class="main-box-title position">Мобильные приложения</h3>
                         </li>
                         <li class="main-box-li">
                             <img src="./images/box/box3.jpg" alt="Планшет" width="370" height="294">
+                            <h3 class="main-box-title position">Дизайнерские решения</h3>
                         </li>
                     </ul>
                 </div>
@@ -362,6 +366,16 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal-window">
+                <button class="modal-close-btn" type="button" data-modal-close>
+                    <svg class="modal-close-icon" width="11" height="11">
+                        <use href="./images/icons.svg#icon-icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        </html>
         <script src="./js/modal.js"></script>
     </body>
 </html>
